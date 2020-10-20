@@ -1,0 +1,58 @@
+html {
+  display: table;
+  margin: auto;
+}
+
+body {
+  font-family: 'Orbitron', serif;
+  font-size: 28px;
+}
+
+#board {
+    border: 1px solid #333;
+    display: inline-block;
+    background-color: rgb(0, 0, 0);
+    padding: 10px; 
+  }
+  
+.cell {
+   display: block;
+   float: left;
+   width: 50px;
+   height: 50px;
+   background-color: rgb(185, 185, 185);   /*-----#10. Add some different color for fun*/
+   color: black;
+   margin: 2px;
+   padding-bottom:0;
+}
+
+.mine.revealed
+{
+  background-color: #ffffff;
+  background-size: 50px 50px;
+  background-image: url("mymine.png");
+}
+
+.revealed
+{
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  color: black;
+  font-size: 20px;
+  background-color: #ffffff;
+  line-height: 50px;
+  vertical-align: top;
+}
+
+.flagged
+{
+  background-image: url("flag.png");
+  background-size: 50px 50px;
+}
+
+.disable_click{
+  pointer-events:none;
+}
+
+  
